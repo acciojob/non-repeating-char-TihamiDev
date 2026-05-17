@@ -2,15 +2,18 @@ function firstNonRepeatedChar(str) {
 	 for (let i = 0; i < str.length; i++) {
 	 	let currentCharacter = str[i]
 		 let count = 0;
+
+		 
 		 for(let j = 0; j < str.length; j++){
-			 if (currentCharacter === str[j]) {
+			 if (str[j] === currentCharacter ) {
 			 	count ++;
 			 } 
-			 if(count === 1){
-				 return currentCharacter;
-				 
-			 }
 		 }
+		 if(count === 1){
+			 return currentCharacter;
+			 
+		 }
+		 
 	 }
 	return null;
 }
