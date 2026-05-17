@@ -3,15 +3,16 @@ function firstNonRepeatedChar(str) {
 	 	let currentCharacter = str[i]
 		 let count = 0;
 		 for(let j = 0; j < str.length; j++){
-			 if (currentCharacter == str[j]) {
+			 if (currentCharacter === str[j]) {
 			 	count ++;
 			 } 
-			 if(count == 1){
+			 if(count === 1){
 				 return currentCharacter;
+				 
 			 }
 		 }
 	 }
 	return null;
 }
-// const input = prompt("Enter a string");
+const input = prompt("Enter a string");
 alert(firstNonRepeatedChar(input)); 
